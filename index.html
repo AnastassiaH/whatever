@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="./global.css" />
+    <title>3D Game</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="main">
+        <div class="homePage">
+          <div class="homeContent">
+            <p class="homeCapturePhrase">
+              Stop spending time on mediocre online stuff!
+            </p>
+            <h1 class="homeHeading">Explore our intriguing 3D game</h1>
+            <p class="homeProposal">
+              instead and experience unparalleled pleasure like you've never
+              seen before.
+            </p>
+            <div class="homeActions">
+              <button class="appButton noButton">No, thanks</button>
+              <button class="appButton continueButton">Continue</button>
+            </div>
+          </div>
+          <span class="backgroundWoman1"></span>
+          <span class="backgroundWoman2"></span>
+        </div>
+        <div class="secondPage hidden">
+          <h2 class="secondPageHeading">
+            Who Would You Choose as Your First Partner, if you play right now?
+          </h2>
+          <div class="sliderContainer">
+            <ul class="slider">
+              <li class="slideCard">
+                <div class="imageContainer">
+                  <img
+                    class="slideImage activeImage"
+                    src="./src/assets/images/slider-woman-2.png"
+                    alt="woman-drawing"
+                  />
+                </div>
+                <p class="slideCapture">Step-Sister</p>
+              </li>
+              <li class="slideCard">
+                <div class="imageContainer">
+                  <img
+                    class="slideImage"
+                    src="./src/assets/images/slider-woman-1.png"
+                    alt="woman-drawing"
+                  />
+                </div>
+                <p class="slideCapture">Your Neighbor</p>
+              </li>
+              <li class="slideCard">
+                <div class="imageContainer">
+                  <img
+                    class="slideImage"
+                    src="./src/assets/images/slider-woman-3.png"
+                    alt="woman-drawing"
+                  />
+                </div>
+                <p class="slideCapture">Famous Celebrity</p>
+              </li>
+            </ul>
+            <button class="sliderButton prevButton" disabled></button>
+            <button class="sliderButton nextButton"></button>
+          </div>
+          <button class="toThirdPageButton appButton">Next</button>
+        </div>
+        <div class="thirdPage hidden">
+          <div class="thirdPageContent">
+            <p class="warningTitle">Warning</p>
+            <p class="warningText">
+              You must be at least 18 years old and comfortable with mature
+              topics to play the game.
+            </p>
+            <button class="appButton finalPageButton">Ok, continue</button>
+          </div>
+          <span class="backgroundWoman3"></span>
+          <span class="backgroundWoman4"></span>
+        </div>
+        <span class="soundButton"></span>
+      </main>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
